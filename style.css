@@ -1,0 +1,116 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+/* Body */
+body {
+  font-family: "Raleway", sans-serif;
+  /* Clean, modern font */
+  background-color: #f7f7f7;
+  /* Soft white background */
+  color: #333;
+  /* Dark gray text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* Full viewport height */
+  text-align: center;
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  /* Soft shadow for depth */
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 480px;
+  /* Max width for readability */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff0179;
+  /* Lovense pink */
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #555;
+  /* Slightly lighter gray text */
+  margin-bottom: 40px;
+}
+
+/* Button Styles */
+button {
+  background-color: #ff0179;
+  /* Lovense pink */
+  color: white;
+  font-size: 1.1rem;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 300px;
+  margin: 12px auto;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #ff6fae;
+  /* Softer pink on hover */
+  transform: translateY(-3px);
+  /* Slight lift effect */
+}
+
+/* Stop Button Styles */
+#stopVibration {
+  background-color: #333;
+  /* Neutral color for Stop button */
+  position: sticky;
+  top: 1rem;
+  color: white;
+}
+
+#stopVibration:hover {
+  background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+    /* Smaller heading for smaller screens */
+  }
+
+  h2 {
+    font-size: 1rem;
+    /* Slightly smaller subtitle */
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
